@@ -1,0 +1,12 @@
+<button (click) = "toggleMensagem()">VISUALIZAR/OCULTAR</button>
+
+<ul *ngIf="mostrarLista"> 
+    <li *ngFor="let item of alunos"
+    [ngStyle] = "{'font-size': fontSize + 'px'}" >
+        CÓDIGO: {{ item.id }}  - >NOME: {{ item.nome }}
+        <span [ngClass] = "{'inativo' : !item.status,'ativo' : item.status}">STATUS: {{ item.status}}</span>
+    </li>
+</ul>
+
+<button (click) = "aumentarFonte()"> + </button>
+<button (click) = "diminuirFonte()"> - </button>

@@ -11,7 +11,17 @@ export class Cadastrar {
 
   caminhoImagem = 'https://angular.io/assets/images/logos/angular/angular.svg';
 
-  dizerOi(){
-    this.nome = "Kayque! Aproveite todos os serviços de nossa página!";
+  mostrarMensagem = false;
+
+  toggleMensagem(){
+    this.mostrarMensagem = !this.mostrarMensagem;
   }
+  
+  listaItens = ['Maçã', 'Banana', 'Laranja'];
+
+  isDestaque = true;
+  hasError = false
+
+  corFundo = 'yellow';
+  tamanhoFonte = '20px';
 }

@@ -1,0 +1,10 @@
+.inativo{
+    color: red;
+    font-weight: bold;
+}
+
+.ativo{
+    color:blue;
+    font-weight: bold;
+}
+
