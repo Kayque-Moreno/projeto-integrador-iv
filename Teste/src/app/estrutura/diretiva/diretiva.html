@@ -3,8 +3,8 @@
 <ul *ngIf="mostrarLista"> 
     <li *ngFor="let item of alunos"
     [ngStyle] = "{'font-size': fontSize + 'px'}" >
-        CÓDIGO: {{ item.id }}  - >NOME: {{ item.nome }}
-        <span [ngClass] = "{'inativo' : !item.status,'ativo' : item.status}">STATUS: {{ item.status}}</span>
+        CÓDIGO: {{ item.id }}  - NOME: {{ item.nome }}
+        <span [ngClass] = "{'inativo' : !item.status,'ativo' : item.status}">STATUS: {{ item.status ? 'ativo' : 'inativo'}}</span>
     </li>
 </ul>
 
