@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Cadastrar } from './cadastrar/cadastrar';
+import { BotaoComponent } from './botao-component/botao-component';
 
 const routes: Routes = [
-  {path:'cadastrar', component: Cadastrar}
+  {path: 'botao-component', component : BotaoComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-
-export class LivrosRoutingModule { }
+export class SharedModuleRoutingModule { }

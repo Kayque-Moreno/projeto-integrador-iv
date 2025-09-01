@@ -1,13 +1,16 @@
 <ul *ngFor = "let item of listaProdutos">
-    <span>PRODUTO: {{item.nome}}</span>
+    <span>PRODUTO: {{item.nome}} | </span>
     <span [ngStyle] = 
-        "{'color' : item.valor > 2000 ? 'blue' : 'black'}">VALOR: {{item.valor}}
+        "{'color' : item.valor > 2000 ? 'blue' : 'black'}"> 
+        VALOR: {{item.valor}} |
     </span>
     <span [ngClass] = 
-        "{'disponivel': item.estoque >  0, 'indisponivel' : item.estoque <= 0}">ESTOQUE: {{item.estoque}}
+        "{'disponivel': item.estoque >  0, 'indisponivel' : item.estoque <= 0}"> ESTOQUE: {{item.estoque}}
         <span *ngIf = "item.estoque > 0"> Disponível </span>
         <span *ngIf = "item.estoque <= 0"> Indisponível </span>
     </span>
 </ul>
+
 <button (click) = "aumentarValor()">AUMENTAR VALOR EM 10%</button>
+<br> <br>
 <button (click) = "diminuirValor()">DIMINUIR VALOR EM 10%</button>
