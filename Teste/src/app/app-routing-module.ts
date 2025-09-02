@@ -21,13 +21,20 @@ const routes: Routes = [
     path: 'produtos',
   loadChildren: () => import('./produtos/produtos-module').then(m => m.ProdutosModule)
   },
+
   {
   path: 'shared-module',
   loadChildren: () => import('./shared-module/shared-module-module').then(m => m.SharedModuleModule)
   },
+
   {
   path: 'produtos-module',
   loadChildren: () => import('./produtos-module/produtos-module-module').then(m => m.ProdutosModuleModule)
+  },
+
+  {
+  path: 'aula',
+  loadChildren: () => import('./aula/aula-module').then(m => m.AulaModule)
   }
 ];
 
