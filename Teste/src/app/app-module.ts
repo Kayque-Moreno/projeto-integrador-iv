@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { ProdutosModuleModule } from './produtos-module/produtos-module-module';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     BrowserModule,
     AppRoutingModule,
     ProdutosModuleModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatButtonModule, 
+    MatIconModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
