@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { ProdutosModuleModule } from './produtos-module/produtos-module-module';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { ProdutosModuleModule } from './produtos-module/produtos-module-module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ProdutosModuleModule
+    ProdutosModuleModule,
+    MatToolbarModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
