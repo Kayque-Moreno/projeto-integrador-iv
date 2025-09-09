@@ -35,7 +35,12 @@ const routes: Routes = [
   {
   path: 'aula',
   loadChildren: () => import('./aula/aula-module').then(m => m.AulaModule)
-  }
+  },
+
+  {
+  path: 'dados',
+  loadChildren: () => import('./dados/dados-module').then(m => m.DadosModule)
+  },
 ];
 
 
